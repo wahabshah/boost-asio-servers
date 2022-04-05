@@ -1,0 +1,8 @@
+workspaceLocation: "."
+image:
+  file: .devcontainer/Dockerfile
+  context: .devcontainer
+ports:
+  - port: 1082
+tasks:
+  - command: "echo hi !!"
