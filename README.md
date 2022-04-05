@@ -19,6 +19,20 @@ nc localhost 1082
 hello
 ```
 
+## Build Echo Server Per Thread Iteration2
+```sh
+rm -rf build && mkdir -p build && \
+(cd build && cmake .. && make clean all VERBOSE=1) && \
+./build/echo-server-perthread2
+```
+
+```sh
+nc localhost 1083
+```
+```sh
+hello
+```
+
 # Links
 
 * https://gist.github.com/wahabshah/a775cb69e9e1242c43356370b6678eac
