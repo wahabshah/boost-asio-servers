@@ -13,7 +13,7 @@ rm -rf build && mkdir -p build && \
 ```
 
 ```sh
-nc localhost 
+nc localhost 1082
 ```
 ```sh
 hello
