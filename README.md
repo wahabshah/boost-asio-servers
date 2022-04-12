@@ -34,7 +34,7 @@ hello
 ## Build Echo Server Coroutine Iteration1
 ```sh
 rm -rf build && mkdir -p build && \
-(cd build && cmake .. && make clean all VERBOSE=1) && \
+(cd build && cmake -DCMAKE_BUILD_TYPE=Debug .. && make clean all VERBOSE=1) && \
 ./build/echo-server-coroutine
 ```
 
