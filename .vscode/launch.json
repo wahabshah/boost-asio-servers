@@ -10,7 +10,17 @@
             "request": "launch",
             "target": "./build/echo-server-perthread",
             "cwd": "${workspaceRoot}",
-            "valuesFormatting": "parseText"
+            "valuesFormatting": "parseText",
+            "preLaunchTask": "cmake && make"
+        },
+        {
+            "name": "echo-server-coroutine",
+            "type": "gdb",
+            "request": "launch",
+            "target": "./build/echo-server-coroutine",
+            "cwd": "${workspaceRoot}",
+            "valuesFormatting": "parseText",
+            "preLaunchTask": "cmake && make"
         }
     ]
 }

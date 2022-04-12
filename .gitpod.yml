@@ -2,7 +2,8 @@ image:
   file: .devcontainer/Dockerfile
   context: .devcontainer
 ports:
-  - port: 1082
+  - port: 1083
+  - port: 1084
 vscode:
   extensions:
     - webfreak.debug
