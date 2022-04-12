@@ -3,5 +3,7 @@ image:
   context: .devcontainer
 ports:
   - port: 1082
-tasks:
-  - command: "echo hi !!"
+vscode:
+  extensions:
+    - webfreak.debug
+    - ms-vscode.cmake-tools
