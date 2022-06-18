@@ -49,3 +49,4 @@ hello
 * http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2021/p2444r0.pdf
 * https://procodeguide.com/programming/async-web-api-with-aspnet-core/
 * https://gist.github.com/wahabshah/a775cb69e9e1242c43356370b6678eac
+* https://www.youtube.com/watch?v=ZNttI_WswMU&t=2494s => How to Use C++20 Coroutines for Networking - Jim Pascoe - ACCU 2022
