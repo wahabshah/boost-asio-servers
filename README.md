@@ -50,3 +50,7 @@ hello
 * https://procodeguide.com/programming/async-web-api-with-aspnet-core/
 * https://gist.github.com/wahabshah/a775cb69e9e1242c43356370b6678eac
 * https://www.youtube.com/watch?v=ZNttI_WswMU&t=2494s => How to Use C++20 Coroutines for Networking - Jim Pascoe - ACCU 2022
+* https://www.youtube.com/watch?v=54oGgmMAUNk => Asynchronous I/O and Coroutines for Smooth Data Streaming - Bjorne Fahller - ACCU 2022
+  * https://unixism.net/loti/ => Lord of the io_uring
+  * https://github.com/facebookexperimental/libunifex =>  C++ sender/receiver async programming model 
+  * https://www.youtube.com/watch?v=7sKUAyWXNHA => Pavel Novikov - "Understanding Coroutines by Example" - C++ London
