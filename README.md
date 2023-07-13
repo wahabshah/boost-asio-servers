@@ -19,14 +19,6 @@
   ![](./images/Async-Web-API.png)
 
 
-```sh
-wget -O asio.tar.gz https://sourceforge.net/projects/asio/files/asio/1.28.0%20%28Stable%29/asio-1.28.0.tar.gz/download
-rm -rf asio && mkdir asio && tar -xvzf  asio.tar.gz --directory asio --strip-components=1
-```
-
-
-
-
 ## Build Echo Server Per Thread Iteration1
 ```sh
 rm -rf build && mkdir -p build && \
@@ -55,6 +47,23 @@ nc localhost 1084
 ```sh
 hello
 ```
+
+## Build 
+```sh
+rm -rf build && mkdir -p build && \
+(cd build && cmake -DCMAKE_BUILD_TYPE=Debug .. && make clean all VERBOSE=1) && \
+./build/resumerable-coroutine
+```
+
+```sh
+nc localhost 1084
+```
+```sh
+hello
+world
+```
+
+
 # Links
 
 * http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2021/p2444r0.pdf
