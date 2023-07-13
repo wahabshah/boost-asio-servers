@@ -22,7 +22,7 @@
 ## Build Echo Server Per Thread Iteration1
 ```sh
 rm -rf build && mkdir -p build && \
-(cd build && cmake -DCMAKE_BUILD_TYPE=Debug .. && make clean all VERBOSE=1) && \
+(cd build && cmake -DCMAKE_BUILD_TYPE=Debug .. && make clean echo-server-perthread VERBOSE=1) && \
 ./build/echo-server-perthread
 ```
 
@@ -37,7 +37,7 @@ hello
 ## Build Echo Server Coroutine Iteration1
 ```sh
 rm -rf build && mkdir -p build && \
-(cd build && cmake -DCMAKE_BUILD_TYPE=Debug .. && make clean all VERBOSE=1) && \
+(cd build && cmake -DCMAKE_BUILD_TYPE=Debug .. && make clean echo-server-coroutine VERBOSE=1) && \
 ./build/echo-server-coroutine
 ```
 
@@ -48,15 +48,18 @@ nc localhost 1084
 hello
 ```
 
-## Build 
+## Build Resumeable Coroutines
 ```sh
 rm -rf build && mkdir -p build && \
-(cd build && cmake -DCMAKE_BUILD_TYPE=Debug .. && make clean all VERBOSE=1) && \
+(cd build && cmake -DCMAKE_BUILD_TYPE=Debug .. && make clean resumerable-coroutine VERBOSE=1) && \
 ./build/resumerable-coroutine
 ```
 
 ```sh
-nc localhost 1084
+nc localhost 54321
+
+# Message 1: hello
+# Message 2: world
 ```
 ```sh
 hello
