@@ -7,8 +7,7 @@
             "compilerPath": "/usr/bin/gcc",
             "cStandard": "gnu17",
             "includePath": [
-                "${default}",
-                "/usr/local/lib/asio/include"
+                "${default}"
             ]
         }
     ],

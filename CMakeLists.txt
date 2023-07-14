@@ -13,7 +13,7 @@ target_compile_options(echo-server-coroutine PUBLIC -fcoroutines)
 
 
 add_executable(resumerable-coroutine resumerable-coroutine.cpp)
-target_include_directories(resumerable-coroutine PUBLIC /usr/local/lib/asio/include)
+target_include_directories(resumerable-coroutine PUBLIC /usr/local/include)
 target_link_libraries(resumerable-coroutine pthread)
 target_compile_features(resumerable-coroutine PUBLIC cxx_std_20)
 target_compile_options(resumerable-coroutine PUBLIC -fcoroutines)

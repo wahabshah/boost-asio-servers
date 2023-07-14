@@ -1,5 +1,5 @@
 // https://www.boost.org/doc/libs/1_82_0/doc/html/boost_asio/overview/composition/coro.html#boost_asio.overview.composition.coro.integrating_with_awaitable
-// https://think-async.com/Asio/asio-1.28.0/doc/asio/overview/composition/coro.html
+// https://think-async.com/Asio/asio-1.28.0/doc/asio/overview/composition/coro.html#asio.overview.composition.coro.integrating_with_awaitable
 // (Note: Boost.Asio 1.28.0 is also included in Boost 1.82.)
 
 // https://packages.debian.org/experimental/libboost-all-dev
