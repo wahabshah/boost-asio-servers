@@ -77,3 +77,17 @@ world
   * https://unixism.net/loti/ => Lord of the io_uring
   * https://github.com/facebookexperimental/libunifex =>  C++ sender/receiver async programming model 
   * https://www.youtube.com/watch?v=7sKUAyWXNHA => Pavel Novikov - "Understanding Coroutines by Example" - C++ London
+
+* https://wiki.koansoftware.com/index.php/Create_patches_using_quilt
+* https://salsa.debian.org/markus/libasio/-/blob/master/debian/patches/0001-exclude-example-cpp20.patch
+  ```sh
+  wget -O asio.tar.gz https://sourceforge.net/projects/asio/files/asio/1.28.0%20%28Stable%29/asio-1.28.0.tar.gz/download \
+  && mkdir -p asio                                                                                                       \
+  && tar -xvzf  asio.tar.gz --directory asio --strip-components=1                                                        \
+  && cd asio
+  quilt new 0001-exclude-examples.patch
+  quilt add src/Makefile.am
+  quilt add configure.ac
+  # edit
+  quilt refresh
+  ```
