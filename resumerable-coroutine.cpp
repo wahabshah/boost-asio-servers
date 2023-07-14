@@ -1,4 +1,10 @@
 // https://www.boost.org/doc/libs/1_82_0/doc/html/boost_asio/overview/composition/coro.html#boost_asio.overview.composition.coro.integrating_with_awaitable
+// https://think-async.com/Asio/asio-1.28.0/doc/asio/overview/composition/coro.html
+// (Note: Boost.Asio 1.28.0 is also included in Boost 1.82.)
+
+// https://packages.debian.org/experimental/libboost-all-dev
+// https://www.boost.org/doc/libs/1_81_0/doc/html/boost_asio/history.html
+// Asio 1.26.0 / Boost 1.81
 
 #include <iostream>
 #define ASIO_HAS_CO_AWAIT
