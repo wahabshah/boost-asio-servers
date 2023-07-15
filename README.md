@@ -9,8 +9,8 @@
 
 
 * This repository contains the two types of echo servers :-
-  * Sync using Per thread creation :- [echo-server-perthread.cpp](./echo-server-perthread.cpp)
-  * Async using c++20 coroutines (stackless) creation :- [echo-server-coroutine.cpp](./echo-server-coroutine.cpp) 
+  * Sync using Per thread creation :- [echo-server-perthread.cpp](./echo-server-perthread.cpp) 
+  * Async using c++20 coroutines (stackless) creation :- [echo-server-coroutine.cpp](./echo-server-coroutine.cpp)
 * These two servers are defined in the paper [p2444r0.pdf](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2021/p2444r0.pdf) on page 16 :-
 
   ![image](https://user-images.githubusercontent.com/8818025/162878885-f778b8dc-d6c9-425d-b3eb-a9f60796410f.png)
@@ -20,6 +20,7 @@
 
 
 ## Build Echo Server Per Thread Iteration1
+* [godbolt link](https://godbolt.org/z/zEEh6a7rE)
 ```sh
 rm -rf build && mkdir -p build && \
 (cd build && cmake -DCMAKE_BUILD_TYPE=Debug .. && make clean echo-server-perthread VERBOSE=1) && \
@@ -35,6 +36,7 @@ hello
 
 
 ## Build Echo Server Coroutine Iteration1
+* [godbolt link](https://godbolt.org/z/Pb5GPx6dr)
 ```sh
 rm -rf build && mkdir -p build && \
 (cd build && cmake -DCMAKE_BUILD_TYPE=Debug .. && make clean echo-server-coroutine VERBOSE=1) && \
@@ -49,6 +51,7 @@ hello
 ```
 
 ## Build Resumeable Coroutines
+* [godbolt link](https://godbolt.org/z/En53vYG74)
 ```sh
 rm -rf build && mkdir -p build && \
 (cd build && cmake -DCMAKE_BUILD_TYPE=Debug .. && make clean resumerable-coroutine VERBOSE=1) && \
